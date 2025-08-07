@@ -15,7 +15,9 @@ This project uses SQL to analyze supply chain data, focusing on orders, cancella
 
 * **Database**: MySQL
 * **Programming Language**: SQL
-* **Dataset**: `sales_test.csv` and `canceled_test.csv`
+
+![MySQL logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_q4J_w_t9IwoI1j-gV_h9_f5b5X9CgC_Q&s)
+![SQL logo](httpss://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_q4J_w_t9IwoI1j-gV_h9_f5b5X9CgC_Q&s)
 
 ## Dataset
 
