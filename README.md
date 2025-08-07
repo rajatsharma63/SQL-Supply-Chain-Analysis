@@ -1,55 +1,74 @@
 # SQL Supply Chain Analysis
 
-## Overview
-This repository contains SQL-based analyses of supply chain data, offering insights such as order trends, customer behavior, item popularity, and cancellations. It’s designed as a learning resource for exploring real-world supply chain challenges.
+## Project Overview
 
-## Analytics & Query Categories
+This project uses SQL to analyze supply chain data, focusing on orders, cancellations, and customer trends. It includes datasets and queries to help understand how SQL can be applied to real-world supply chain problems. This project demonstrates a comprehensive analysis of supply chain data using SQL. It covers a range of insights such as order trends, customer behavior, item popularity, and advanced classifications. The dataset includes sales data (`sales_test.csv`) and cancellations data (`canceled_test.csv`). The queries are categorized into Easy, Intermediate, and Advanced levels based on complexity.
 
-###  Easy
-1. Count of orders placed in January 2017  
-2. Total units ordered in February 2017  
-3. Canceled orders per customer  
-4. Number of unique customers  
-5. Average items ordered per order  
-6. Top-ordered items  
-7. Successful orders by specific customers  
+## Features
 
-### Intermediate
-8. Units ordered vs. canceled for overlapping items  
-9. Detailed canceled vs. successful order comparisons  
-10. Order classification by volume (High / Medium / Low)  
-11. Shipped items as a percentage of ordered items per customer  
-12. Top 3 customers by canceled orders  
-13. Items where cancellations exceed shipments  
-14. Customer with highest orders in January 2017  
+* **Basic Analytics**: Total orders, unique customers, and average items ordered.
+* **Customer Insights**: Top customers, canceled orders, and successful order rates.
+* **Item Trends**: Top-ordered items, ABC classification, and canceled vs. shipped items.
+* **Advanced Techniques**: Cumulative sales, order rankings, and customer contributions to sales.
 
-### Advanced
-15. Cumulative ordered units per customer over time  
-16. Customers with the most cancellations and their total sales  
-17. Contribution percentage of top 5 customers to total sales  
-18. ABC classification of items by sales contribution  
+## Tools and Technologies
 
-These queries help uncover trends like cancellation rates, top-performing items/customers, and inventory prioritization via ABC analysis (commonly used in inventory management to categorize items by importance) :contentReference[oaicite:0]{index=0}.
+* **Database**: MySQL
+* **Programming Language**: SQL
+* **Dataset**: `sales_test.csv` and `canceled_test.csv`
 
-## Getting Started
+## Dataset
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/rajatsharma63/SQL-Supply-Chain-Analysis.git
-   
-2. Import the CSV files (sales_test.csv, canceled_test.csv) into your SQL environment (e.g., MySQL, PostgreSQL).
+The dataset for this project is composed of two CSV files:
 
-3. Run the queries in Supply Chain Query.sql to explore the data and generate insights.
+### `sales_test.csv`
 
-4. Customize queries or add new analyses as needed for your use case.
+Contains details about orders placed, including:
 
+* `ORDER_NO`: Order ID
+* `CUSTOMER_NO`: Customer ID
+* `ITEM`: Item ordered
+* `NS_ORDER`: Number of items ordered
+* `NS_SHIP`: Number of items shipped
+* `DATE`: Date of the order
 
+### `canceled_test.csv`
 
+Contains information on cancellations, including:
 
+* `CUSTOMER_NO`: Customer ID
+* `ITEM`: Item canceled
+* `NC_ORDER`: Number of items canceled
+* `NC_SHIP`: Number of canceled items shipped
 
-## Purpose & Key Learnings
+## SQL Queries
 
-- 🛠️ Hands-on application of SQL for analyzing supply chain data.  
-- 📦 Learn how to handle datasets involving orders and cancellations.  
-- 📊 Understand customer behavior, cancellation patterns, and item prioritization (via ABC analysis).  
-- 🎯 Gain valuable insights for real-world decision-making in supply chain management.
+The SQL queries for this analysis are categorized by difficulty:
+
+### Easy Level
+
+* Total number of orders.
+* Total number of unique customers.
+* Average items ordered per order.
+* Top 5 most ordered items.
+* Total successful orders for specific customers.
+
+### Intermediate Level
+
+* Comparison of ordered vs. canceled units for items appearing in both datasets.
+* A detailed comparison between canceled and successful orders for the same items.
+* Classification of orders as 'High', 'Medium', or 'Low' based on volume.
+* Calculation of shipped items as a percentage of ordered items for each customer.
+* Identification of the top 3 customers with the highest number of canceled orders.
+* Listing items that were canceled more often than they were shipped.
+* Finding the top-ordering customer in January 2017.
+
+### Advanced Level
+
+* ABC classification of items into A, B, and C categories based on their contribution to sales.
+
+## How to Use
+
+1.  Load the datasets (`sales_test.csv` and `canceled_test.csv`) into your SQL database.
+2.  Execute the provided SQL queries in your SQL environment.
+3.  Review the results and insights generated.
