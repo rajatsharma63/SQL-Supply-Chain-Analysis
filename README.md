@@ -3,11 +3,6 @@
 ## Overview
 This repository contains SQL-based analyses of supply chain data, offering insights such as order trends, customer behavior, item popularity, and cancellations. It’s designed as a learning resource for exploring real-world supply chain challenges.
 
-## Project Files
-- **sales_test.csv** — Dataset containing order-level information: `ORDER_NO`, `CUSTOMER_NO`, `ITEM`, `NS_ORDER` (number ordered), `NS_SHIP` (number shipped), and `DATE`.
-- **canceled_test.csv** — Dataset tracking cancellations: `CUSTOMER_NO`, `ITEM`, `NC_ORDER` (number of items canceled), `NC_SHIP` (number of canceled items shipped).
-- **Supply Chain Query.sql** — Contains categorized SQL queries to explore and analyze the datasets.
-
 ## Analytics & Query Categories
 
 ###  Easy
